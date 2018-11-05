@@ -4,15 +4,24 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.8",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.8.0"
   },
   "devDependencies": {
     "eslint": "^5.8.0",
-    "eslint-plugin-node": "^8.0.0"
+    "eslint-plugin-node": "^8.0.0",
+    "nodemon": "^1.18.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
