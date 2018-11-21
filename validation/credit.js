@@ -3,7 +3,7 @@ const isEmpty = require('./is-empty');
 
 module.exports = function validateCreditInput(data) {
     let errors = {};
-console.log(data);
+
     data.name = !isEmpty(data.name) ? data.name : '';
     data.amount = !isEmpty(data.amount) ? parseFloat(data.amount) : 0;
     data.payments = !isEmpty(data.payments) ? parseFloat(data.payments) : 0;
