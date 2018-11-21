@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const cors = require('cors');
 
+const payments = require('./routes/api/payments');
 const users = require('./routes/api/users');
 const credits = require('./routes/api/credits');
 
@@ -48,6 +49,7 @@ app.use(passport.initialize());
 require('./config/passport')(passport);
 
 //use Routes
+app.use('/api/payments', payments);
 app.use('/api/users', users);
 app.use('/api/credits', credits);
 
